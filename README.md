@@ -40,7 +40,7 @@ The management might not have enough time to go through each and every review. I
 **Interpretations:** It can be observed that for all the three carriers, the number of positive reviews is more than negative reviews. But as the number of reviews for a restaurant increases, the proportion of negative reviews also increases. Hash House A Go Go has maximum reviews and more negative reviews compared to others.
 
 #### Representative frequent words for positive and negative reviews
-<img src="images/words.png" width="800" height="500">
+<img src="images/words.png" width="400" height="200">
 
 **Interpretations:** The frequent words in positive and negative reviews are quite similar. It’s good to have this as the starting point. We can see that reviewers talked a lot about the portion size in positive and service in negative reviews for Hash House A Go Go.
 
