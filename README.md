@@ -32,6 +32,8 @@ Now, after cleaning the dataset, sentimental analysis was applied on the data to
 
 <img src="images/Sentiment polarity.png" width="800" height="500">
 
+**Interpretations:** It can be observed how the sentiment varies for each review for different restaurants. It helps us to understand how many reviews were positive and negative. For example, Hash House A Go Go had the maximum number of reviews with -0.1 polarity (negative). Most of the reviews for each restaurant were positive and were between 0.1 and 0.6.
+
 
 
 
