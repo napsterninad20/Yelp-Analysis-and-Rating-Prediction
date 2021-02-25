@@ -13,5 +13,6 @@ The management might not have enough time to go through each and every review. I
 
 ## Exploratory Data Analysis
 #### 1. Which are the top 10 categories with the maximum number of reviews?
+<img src="P3.png" width="600" height="300">
 
 
