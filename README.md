@@ -14,6 +14,7 @@ The management might not have enough time to go through each and every review. I
 ## Exploratory Data Analysis
 #### 1. Which are the top 10 categories with the maximum number of reviews?
 <img src="images/Top 10 Businesses.png" width="800" height="500">
+
 **Interpretation:** Restaurants are the most reviewed business category followed by shopping, food and home services. It is always better to focus on one category for analysis in order to get relevant insights from data. Hence, reviews were filtered in the dataset to keep only restaurant category reviews.
 
 #### 2. Which city has the maximum number of restaurant reviews?
@@ -26,7 +27,7 @@ The management might not have enough time to go through each and every review. I
 
 **Interpretation:** From April 2016 to December 2018, it can be observed how the number of reviews for each restaurant varies. For example, for Nacho Daddy the reviews dropped from 100 in May 2016 to 20 in June 2016. It stayed the same for quite some time until Sept 2016. This information can be useful for the management to evaluate the possible reasons behind the drop and gain in number of reviews and when it happened.
 
-Now, after cleaning the dataset, sentimental analysis was applied on the data to achieve analysis aim.
+Now, after cleaning the dataset, sentimental analysis was applied on the data to achieve analysis aim on Las vegas's top three restaurants.
 #### Sentiment polarity distribution for the restaurants
 
 <img src="images/Sentiment polarity.png" width="800" height="500">
