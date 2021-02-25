@@ -27,12 +27,40 @@ The management might not have enough time to go through each and every review. I
 
 **Interpretation:** From April 2016 to December 2018, it can be observed how the number of reviews for each restaurant varies. For example, for Nacho Daddy the reviews dropped from 100 in May 2016 to 20 in June 2016. It stayed the same for quite some time until Sept 2016. This information can be useful for the management to evaluate the possible reasons behind the drop and gain in number of reviews and when it happened.
 
-Now, after cleaning the dataset, sentimental analysis was applied on the data to achieve analysis aim on Las vegas's top three restaurants.
+#### Now, after cleaning the dataset, sentimental analysis was applied on the data to achieve analysis aim on Las vegas's top three restaurants.
 #### Sentiment polarity distribution for the restaurants
 
 <img src="images/Sentiment polarity.png" width="800" height="500">
 
 **Interpretations:** It can be observed how the sentiment varies for each review for different restaurants. It helps us to understand how many reviews were positive and negative. For example, Hash House A Go Go had the maximum number of reviews with -0.1 polarity (negative). Most of the reviews for each restaurant were positive and were between 0.1 and 0.6.
+
+#### Positive vs Negative reviews for each restaurant
+<img src="images/PN reviews.png" width="800" height="500">
+
+**Interpretations:** It can be observed that for all the three carriers, the number of positive reviews is more than negative reviews. But as the number of reviews for a restaurant increases, the proportion of negative reviews also increases. Hash House A Go Go has maximum reviews and more negative reviews compared to others.
+
+#### Representative frequent words for positive and negative reviews
+<img src="images/words.png" width="800" height="500">
+
+**Interpretations:** The frequent words in positive and negative reviews are quite similar. It’s good to have this as the starting point. We can see that reviewers talked a lot about the portion size in positive and service in negative reviews for Hash House A Go Go.
+
+## Topic Modelling
+After separating the negative from the positive reviews, we built topic models using TF-IDF(Term Frequency - Inverse Document Frequency) ​and ​LDA(Latent Dirichlet Allocation) from the gensim package to understand what reviewers are talking about in the reviews.
+
+<img src="images/TM.png" width="800" height="500">
+
+From the results, it can be observed the following for each restaurant:
+- Bacchanal Buffet: Reviewers probably liked the quality of seafood and buffet and were dissatisfied with the manager, service and wait time.
+- Nacho daddy: Reviewers praised margarita pizza, location, portion size, and breakfast but left negative reviews for bartenders, tacos, burritos, and servers.
+- Hash House A Go Go: Reviewers left positive feedback for pancakes, vega, and portion size but were not happy with biscuits, benedict, manager, waiter, and service.
+
+## Rating Prediction
+
+There can be times when a user leaves a review and no rating for the restaurant. To predict the rating that the restaurant would have received based on each review we have used three different models - Naive Bayes, Random Forest, and Neural Network. We partitioned the dataset into training(70%) and testing(30%) dataset. Using the TF-IDF vectorizer, we transformed the clean preprocessed reviews text and used it as an input for all the three models.
+
+
+
+
 
 
 
